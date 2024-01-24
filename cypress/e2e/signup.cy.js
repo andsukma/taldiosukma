@@ -11,7 +11,7 @@ describe('Sign Up Taldio', () => {
     randomNumber = faker.number.int({min:999999,max:999999999999});
   })
 
-  it('Talent Register with input valid data should be success #QR-TC-1201', () => {
+  it('Talent Register with input valid data should be success ', () => {
     const Password = '!'+ randomName;
     SignUp.getSignUpButton().click();
     SignUp.getFullNameField().type(randomName);
@@ -23,7 +23,7 @@ describe('Sign Up Taldio', () => {
     cy.url().should('contain', 'https://taldio.com/resendemail');
    })
 
-   it('Talent Register with input invalid data should be failed #QR-TC-1202', () => {
+   it('Talent Register with input invalid data should be failed', () => {
     const Password = '!'+ randomName;
     SignUp.getSignUpButton().click();
     SignUp.getFullNameField().type(randomName);
