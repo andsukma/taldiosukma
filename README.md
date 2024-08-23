@@ -1,5 +1,5 @@
 # taldiosukma
-Technical Test for Taldio
+Login & Sign Up Demo
 ------------------------------------------------------
 Please follow the steps below to clone the repository :
 1. git clone repo
